@@ -1,0 +1,14 @@
+{% extends "recetas/inicio.html" %}
+
+{% block contenido %}
+    <section>
+  <div>
+    <h1>Usuarios Destacados</h1>
+    <ul></ul>
+    {% for user in usuarios %}
+      <li>{{user.nombre}}, {{user.apellido}}<p></p></li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock contenido %}

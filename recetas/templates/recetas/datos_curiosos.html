@@ -1,0 +1,9 @@
+{% extends "recetas/inicio.html" %}
+
+{% block contenido %} 
+    <body>
+        {% for datos in dato_curioso %}
+        <li>{{datos.datos_curiosos}} <p></p></li>
+        {% endfor %}
+    </body>
+{% endblock contenido %}
